@@ -1,23 +1,38 @@
 {
-    "user" : {
-        "fullName" : "TSHEPO MOFOKENG",
-        "phone" :"067 152 1862",
-        "email" : "tseko9164@gmail.com",
-        "address" : "1982 Tshepisong, Rooderpoort, Gauteng",
-        "references" : "available upon request",
-        "summary": "A dedicated and driven Industrial Engineering graduate passionate about leveraging technology to drive innovation, I am excited about the prospect of joining the Sanlam Data & Digital Academy. With a solid foundation in Industrial Engineering and a keen interest in data analytics and digital technologies, I am eager to immerse myself in real-world business cases and collaborate with industry experts at Sanlam."
+  "user": {
+    "fullName": "Tshepo Mofokeng",
+    "phone": "067 152 1862",
+    "email": "tseko9164@gmail.com",
+    "address": "1982 Tshepisong, Rooderpoort, Gauteng",
+    "references": "available upon request",
+    "summary": "A dedicated and driven Industrial Engineering graduate passionate about leveraging technology to drive innovation, I am excited about the prospect of joining the Sanlam Data & Digital Academy. With a solid foundation in Industrial Engineering and a keen interest in data analytics and digital technologies, I am eager to immerse myself in real-world business cases and collaborate with industry experts at Sanlam."
+  },
+  "education": {
+    "institutionName": "BTech Honours Industrial Engineering",
+    "address": "University of Johannesburg, Gauteng",
+    "place": {
+      "title": "France, Paris",
+      "reason": "Paris, a timeless city of allure and cultural richness, whispers tales of history, art, and romance at every corner. From the iconic Eiffel Tower to Montmartre's labyrinthine streets, it's a symphony of architectural marvels and culinary delights. Each moment, from Louvre's grandeur to Seine's tranquil banks, invites immersion in its timeless charm and vibrant spirit."
     },
-    "education" : {
-        "institutionName" : "BTech Honours Industrial Engineering",
-        "date": "[2024-current]",
-        "address" : "University of Johannesburg, Gauteng",
-        "institutionName2" : "BTech Industrial Engineering",
-        "address2" : "University of Johannesburg, Gauteng",
-        "date2": "[2020-2022]"
+    "lang": {
+      "title": "Foreign Languages",
+      "EnglishPhrase": "Hello",
+      "JapanesePhrase": "こんにちは",
+      "Pronunciation": "Kon'nichiwa"
     },
-    "skills" : {
-        "skill1": "Attention to Detail",
-        "skill2": "Analytical Skills",
-        "skill3": "Project Management"
-}
+    "modules": {
+      "module1": {
+        "title": "4IR Technologies",
+        "description": "Gaining exposure to cutting-edge technologies including Artificial Intelligence, Machine Learning, Big Data, IoT, Sensor Technology, and Blockchain, and applying them in real-world projects."
+      },
+      "module2": {
+        "title": "Full Stack Web Dev",
+        "description": "Developing proficiency in coding using JavaScript, HTML5, CSS3, React, Node.js, Express, SQL, and Python."
+      },
+      "module3": {
+        "title": "Agile Rapid Skills",
+        "description": "Enhancing skills in effective planning, communication, rapid adaptation, and collaborative development through regular presentations and team collaborations."
+      }
+    }
+  }
 }
