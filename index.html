@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Explorer</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+
+<body>
+  <section class="container">
+    <section>
+
+      <div class="section">
+        <div class="col">
+          <div class="row">
+            <header class="col center profile">
+              <div class="background-image">
+                <div class="overlay">
+                  <div class="container me-image">
+                    <div class="me-image">
+                      <img id="me-image" src="./public/images/me.jpeg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="heading">
+                <h5 class="header center"><b>Tshepo Mofokeng</b></h5>
+                <p id="about">⛳Aspiring Industrial Engineer, Software Developer | Seeking Internship in Industrial Engineering, SAP, Programming or IT Auditing</p>
+                <hr>
+                <div class="social-links">
+                  <div align="center">
+                    <a href="https://wa.me/qr/OI26QJNBJSEYF1"><img src="./public/images/whatsapp.png" alt="WhatsApp"
+                        width="30px"></a>
+                    <a href="https://www.linkedin.com/in/mofokengtt21"><img src="./public/images/linked-in.png"
+                        alt="LinkedIn" width="30px"></a>
+                  </div>
+                </div>
+              </section>
+            </header>
+
+
+            <div class="col right paris">
+              <h4 class="first"><b class="first">Explore with {{firstName}}</b></h4>
+              <P>Personal Webpage using handlebars</P>
+              <div class="icon-block  back-card">
+                <div class="">
+                  <div class="row ">
+                    <div class="favorite-city">
+                      <h5 class="fav-heading">France, Paris</h>
+                        <section class="">
+                          <div class="favorite-city-image">
+                            <img class="favorite-city-image" src="/public/images/paris.jpg">
+                          </div>
+
+                          <div class="reason">
+                            <p>Paris, a timeless city of allure and cultural richness, whispers tales of history, art,
+                              and romance at every corner. From the iconic Eiffel Tower to Montmartre's labyrinthine
+                              streets, it's a symphony of architectural marvels and culinary delights. Each moment, from
+                              Louvre's grandeur to Seine's tranquil banks, invites immersion in its timeless charm and
+                              vibrant spirit.</p>
+                          </div>
+                        </section>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="row">
+                    <div class="favorite-city trans-white">
+                      <h5 class="fav-heading">Foreign Langueges</h>
+                      <section class="">
+                        <div class="">
+                          <table class="languages-table">
+                            <tr>
+                              <td>
+                                <p>Spanish</p>
+                              </td>
+                              <td>
+                                <p>Learning Spanish opens doors to communicate with over 500 million speakers worldwide.
+                                  It's one of the most widely spoken languages and is valuable for travel, career
+                                  opportunities, and cultural enrichment.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>Japanese</p>
+                              </td>
+                              <td>
+                                <p>Studying Japanese offers access to a rich and diverse culture, including literature,
+                                  art, and cinema. It's also beneficial for business, particularly in technology,
+                                  gaming, and tourism industries.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>French</p>
+                              </td>
+                              <td>
+                                <p>Mastering French provides access to a treasure trove of art, cuisine, and history.
+                                  It's the language of diplomacy, making it valuable for international relations and
+                                  career opportunities in fields such as fashion, gastronomy, and hospitality.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </section>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col row2 right fade-background">
+              <h4 class="first"><b class="first">Favourite Modules</b></h4>
+              <p><b>BTech Hons Industrial Engineering</b><br>University of Johannesburg, <i>Gauteng</i></P>
+              <div class="icon-block2">
+                <div class="">
+                  <section clas=row-favorite-subjects">
+                    <div class=" favorite-city trans-white">
+                      <img class="favorite-subjects-images" src="./public/images/4IR.jpg">
+                      <h6>4IR Technologies</h6>
+                      <p>Gaining exposure to cutting-edge technologies including Artificial
+                        Intelligence, Machine Learning, Big Data, IoT, Sensor Technology, and Blockchain, and applying
+                        them in real-world projects.</p>
+                    </div><br>
+                    <div class="favorite-city trans-green">
+                      <img class="favorite-subjects-images" src="./public/images/full-stack.jpg">
+                      <h6>Full Stack Web Dev</h6>
+                      <p>Developing proficiency in coding using JavaScript, HTML5, CSS3,
+                        React, Node.js, Express, SQL, and Python.</p>
+                    </div><br>
+                    <div class="favorite-city trans-white">
+                      <img class="favorite-subjects-images" src="./public/images/agile.jpeg">
+                      <h6>Agile Rapid Skills</h6>
+                      <p>Enhancing skills in effective planning, communication, rapid
+                        adaptation, and collaborative development through regular presentations and team
+                        collaborations.</p>
+                    </div><br>
+                      <img id="favorite-subjects-images" src="./public/images/handlebars.png">
+                  </section>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <hr>
+      <br>
+    </footer>
+
+  <script>
+    function openPopup() {
+      document.getElementById("popupOverlay").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popupOverlay").style.display = "none";
+    }
+  </script>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
