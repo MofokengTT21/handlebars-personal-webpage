@@ -1,0 +1,23 @@
+{
+    "user" : {
+        "fullName" : "TSHEPO MOFOKENG",
+        "phone" :"067 152 1862",
+        "email" : "tseko9164@gmail.com",
+        "address" : "1982 Tshepisong, Rooderpoort, Gauteng",
+        "references" : "available upon request",
+        "summary": "A dedicated and driven Industrial Engineering graduate passionate about leveraging technology to drive innovation, I am excited about the prospect of joining the Sanlam Data & Digital Academy. With a solid foundation in Industrial Engineering and a keen interest in data analytics and digital technologies, I am eager to immerse myself in real-world business cases and collaborate with industry experts at Sanlam."
+    },
+    "education" : {
+        "institutionName" : "BTech Honours Industrial Engineering",
+        "date": "[2024-current]",
+        "address" : "University of Johannesburg, Gauteng",
+        "institutionName2" : "BTech Industrial Engineering",
+        "address2" : "University of Johannesburg, Gauteng",
+        "date2": "[2020-2022]"
+    },
+    "skills" : {
+        "skill1": "Attention to Detail",
+        "skill2": "Analytical Skills",
+        "skill3": "Project Management"
+}
+}
