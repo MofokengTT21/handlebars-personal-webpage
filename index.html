@@ -30,14 +30,13 @@
                 </div>
               </div>
               <section class="heading">
-                <h5 class="header center"><b>{{user.fullName}}</b></h5>
-                <p id="about">⛳{{user.summary}}</p>
+                <h5 class="header center"><b>{{fullName}}</b></h5>
+                <p id="about">{{bio}}</p>
                 <hr>
                 <div class="social-links">
                   <div align="center">
-                    <a href="https://wa.me/qr/OI26QJNBJSEYF1"><img src="./whatsapp.png" alt="WhatsApp" width="30px"></a>
-                    <a href="https://www.linkedin.com/in/mofokengtt21"><img src="./linked-in.png" alt="LinkedIn"
-                        width="30px"></a>
+                    <a href="{{whatsappLink}}"><img src="./whatsapp.png" alt="WhatsApp" width="30px"></a>
+                    <a href="{{linkedinLink}}"><img src="./linked-in.png" alt="LinkedIn" width="30px"></a>
                   </div>
                 </div>
               </section>
@@ -46,19 +45,19 @@
 
             <div class="col right paris">
               <h4 class="first"><b class="first">Explore with {{firstName}}</b></h4>
-              <P>Personal Webpage using handlebars</P>
+              <P>{{personalWebpage}}</P>
               <div class="icon-block  back-card">
                 <div class="">
                   <div class="row ">
                     <div class="favorite-city">
-                      <h5 class="fav-heading">France, Paris</h>
+                      <h5 class="fav-heading">{{favoriteCityTitle}}</h>
                         <section class="">
                           <div class="favorite-city-image">
                             <img class="favorite-city-image" src="./paris.jpg">
                           </div>
 
                           <div class="reason">
-                            <p>{{place.reason}}</p>
+                            <p>{{favoriteCityDescription}}</p>
                           </div>
                         </section>
 
@@ -68,23 +67,78 @@
                 <div class="">
                   <div class="row">
                     <div class="favorite-city trans-white">
-                      <h5 class="fav-heading">{{lang.title}}</h>
-
+                      <h5 class="fav-heading">{{foreignLanguagesTitle}}</h>
+                        <p>{{description}}</p>
                         <section class="">
                           <div class="">
                             <table class="languages-table">
+                              <td>
+                                <p>English Phrase</p>
+                              </td>
+                              <td>
+                                <p>Japanese Phrase</p>
+                              </td>
+                              <td>
+                                <p>Pronunciation</p>
+                              </td>
+                              </tr>
                               <tr>
                                 <td>
-                                  <p>{{lang.EnglishPhrase}}</p>
+                                  <p>{{languages.[0].englishPhrase}}</p>
                                 </td>
                                 <td>
-                                  <p>{{lang.JapanesePhrase}}</p>
+                                  <p>{{languages.[0].japanesePhrase}}</p>
                                 </td>
                                 <td>
-                                  <p>{{lang.Pronunciation}}</p>
+                                  <p>{{languages.[0].pronunciation}}</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p>{{languages.[1].englishPhrase}}</p>
+                                </td>
+                                <td>
+                                  <p>{{languages.[1].japanesePhrase}}</p>
+                                </td>
+                                <td>
+                                  <p>{{languages.[1].pronunciation}}</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p>{{languages.[2].englishPhrase}}</p>
+                                </td>
+                                <td>
+                                  <p>{{languages.[2].japanesePhrase}}</p>
+                                </td>
+                                <td>
+                                  <p>{{languages.[2].pronunciation}}</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p>{{languages.[3].englishPhrase}}</p>
+                                </td>
+                                <td>
+                                  <p>{{languages.[3].japanesePhrase}}</p>
+                                </td>
+                                <td>
+                                  <p>{{languages.[3].pronunciation}}</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p>{{languages.[4].englishPhrase}}</p>
+                                </td>
+                                <td>
+                                  <p>{{languages.[4].japanesePhrase}}</p>
+                                </td>
+                                <td>
+                                  <p>{{languages.[4].pronunciation}}</p>
                                 </td>
                               </tr>
                             </table>
+
                           </div>
                         </section>
 
@@ -95,48 +149,67 @@
             </div>
 
             <div class="col row2 right fade-background">
-              <h4 class="first"><b class="first">Favourite Modules</b></h4>
-              <p><b>{{education.institutionName}}</b><br>{{education.address}}</P>
+              <h4 class="first"><b class="first">{{favoriteModulesTitle}}</b></h4>
+              <p><b>{{degree}}</b><br>{{university}}, <i>{{location}}</i></P>
               <div class="icon-block2">
                 <div class="">
-                  <section class="row-favorite-subjects">
-                    <div class="favorite-city trans-white">
-                      <div class="flex-container">
-                        <div class="flex-item image">
-                          <img class="favorite-subjects-images" src="./4IR.jpg">
+                  <!DOCTYPE html>
+                  <html lang="en">
+
+                  <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Favorite Subjects</title>
+                    <link rel="stylesheet" href="styles.css">
+                  </head>
+
+                  <body>
+
+                    <section class="row-favorite-subjects">
+                      <div class="favorite-city trans-white">
+                        <div class="flex-container">
+                          <div class="flex-item image">
+                            <img class="favorite-subjects-images" src="./4IR.jpg">
+                          </div>
+                          <div class="flex-item description">
+                            <h6>{{subjects.0.title}}</h6>
+                            <p>{{subjects.0.description}}</p>
+                          </div>
                         </div>
-                        <div class="flex-item description">
-                          <h6>{{modules.module1.title}}</h6>
-                          <p>{{modules.module1.description}}</p>
+                      </div><br>
+                      <div class="favorite-city trans-green">
+                        <div class="flex-container">
+                          <div class="flex-item image order-1">
+                            <img class="favorite-subjects-images" src="./full-stack.jpg">
+                          </div>
+                          <div class="flex-item description order-2">
+                            <h6>{{subjects.1.title}}</h6>
+                            <p>{{subjects.1.description}}</p>
+                          </div>
                         </div>
+                      </div><br>
+                      <div class="favorite-city trans-white">
+                        <div class="flex-container">
+                          <div class="flex-item image">
+                            <img class="favorite-subjects-images" src="./agile.jpeg">
+                          </div>
+                          <div class="flex-item description">
+                            <h6>{{subjects.2.title}}</h6>
+                            <p>{{subjects.2.description}}</p>
+                          </div>
+                        </div>
+                      </div><br>
+                      <div>
+                        <img id="favorite-subjects-images" src="./handlebars.png">
                       </div>
-                    </div><br>
-                    <div class="favorite-city trans-green">
-                      <div class="flex-container">
-                        <div class="flex-item image order-1">
-                          <img class="favorite-subjects-images" src="./full-stack.jpg">
-                        </div>
-                        <div class="flex-item description order-2">
-                          <h6>{{modules.module2.title}}</h6>
-                          <p>{{modules.module2.description}}</p>
-                        </div>
-                      </div>
-                    </div><br>
-                    <div class="favorite-city trans-white">
-                      <div class="flex-container">
-                        <div class="flex-item image">
-                          <img class="favorite-subjects-images" src="./agile.jpeg">
-                        </div>
-                        <div class="flex-item description">
-                          <h6>{{modules.module3.title}}</h6>
-                          <p>{{modules.module3.description}}</p>
-                        </div>
-                      </div>
-                    </div><br>
-                    <div>
-                      <img id="favorite-subjects-images" src="./handlebars.png">
-                    </div>
-                  </section>
+                    </section>
+
+
+                  </body>
+
+                  </html>
+
+
                 </div>
               </div>
             </div>
@@ -149,12 +222,11 @@
       <hr>
       <br>
     </footer>
-  </section>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="./js/materialize.js"></script>
-  <script src="./js/init.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
 
 </body>
 
