@@ -123,15 +123,17 @@ hr {
 
 .flex-item {
   flex: 1 1 100px;
+  padding-left: 20px;
 }
 
 .image {
   max-width: 100%;
-  padding-right: 20px;
+  
 }
 
 .description {
   flex: 2 1 200px;
+  
 }
 .order-1 {
   order: 1;
@@ -139,6 +141,7 @@ hr {
 
 .order-2 {
   order: 2;
+  padding-right: 5px;
 }
 .favorite-subjects-images {
   width: 100%;
